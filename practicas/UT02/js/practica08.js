@@ -8,7 +8,7 @@ if (anoNac >= 1994 && anoNac <= 2010) {
 } else if (anoNac >= 1969 && anoNac <= 1980) {
     confirm("Generación X");
 } else if (anoNac >= 1949 && anoNac <= 1968) {
-    alconfirmert("Baby Boomer");
+    confirm("Baby Boomer");
 } else {
     confirm("Generación desconocida");
 }
