@@ -14,4 +14,4 @@ for (let k = 0; k < 4; k++) {
     } 
 }
 
-console.log(`El mayor número es ${mayor} y el menor es ${menor}`);
+alert(`El mayor número es ${mayor} y el menor es ${menor}`);

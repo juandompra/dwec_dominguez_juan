@@ -11,4 +11,4 @@ if (nombreCalle == "Calle Los Claveles" || nombreCalle == "Calle El Rosal" || no
     linea = "linea Desconocida";
 }
  
-console.log(`Tienes que tomar la ${linea} para ir desde la ${nombreCalle} hasta el trabajo`);
+alert(`Tienes que tomar la ${linea} para ir desde la ${nombreCalle} hasta el trabajo`);

@@ -1,14 +1,10 @@
 let numero;
-
 do {
     numero = prompt("Introduce un número válido");
-    if (!isNaN(+numero) && +numero > 0) {
-        break;
-    }
-} while (numero);
+} while (numero === null || isNaN(+numero) || numero.trim() == '');
 
 if (numero%2 == 0) {
-    console.log(`El número que has introducido es ${numero}, y es par.`);
+    alert(`El número que has introducido es ${numero}, y es par.`);
 } else {
-    console.log(`El número que has introducido es ${numero}, y es impar.`);
+    alert(`El número que has introducido es ${numero}, y es impar.`);
 }

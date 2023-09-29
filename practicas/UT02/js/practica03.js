@@ -22,4 +22,4 @@ let totalPlatanos = precioPlatanos * numPlatanos;
 let precioTotal = totalManzanas + totalNaranjas + totalPlatanos;
 let totalKilos = numManzanas + numNaranjas + numPlatanos;
 
-console.log(`Has comprado un total de ${totalKilos} kilos de fruta y te ha costado ${precioTotal} euros`);
+alert(`Has comprado un total de ${totalKilos} kilos de fruta y te ha costado ${precioTotal} euros`);
