@@ -2,7 +2,7 @@ let numero;
 
 do {
     numero = prompt("Introduce un número válido");
-    if (!isNaN(+numero)) {
+    if (!isNaN(+numero) && +numero > 0) {
         break;
     }
 } while (numero);
