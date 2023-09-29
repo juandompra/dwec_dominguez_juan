@@ -2,13 +2,13 @@ let anoNac = prompt("Indica tu año de nacimiento");
 anoNac = Number(anoNac);
 
 if (anoNac >= 1994 && anoNac <= 2010) {
-    alert("Generación Z");
+    confirm("Generación Z");
 } else if (anoNac >= 1981 && anoNac <= 1993) {
-    alert("Generación milenial");
+    confirm("Generación milenial");
 } else if (anoNac >= 1969 && anoNac <= 1980) {
-    alert("Generación X");
+    confirm("Generación X");
 } else if (anoNac >= 1949 && anoNac <= 1968) {
-    alert("Baby Boomer");
+    alconfirmert("Baby Boomer");
 } else {
-    alert("Generación desconocida");
+    confirm("Generación desconocida");
 }

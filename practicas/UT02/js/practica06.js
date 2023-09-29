@@ -6,5 +6,5 @@ k = Number(k);
 
 for (let cont = 1; cont <= k; cont++) {
     let multiplicacion = n * cont;
-    alert(`${n} \* ${cont} = ${multiplicacion}`); 
-    }
+    console.log(`${n} \* ${cont} = ${multiplicacion}`); 
+}

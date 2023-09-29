@@ -3,4 +3,4 @@ do {
     numero = prompt("Introduce un número válido");
 } while (numero === null || isNaN(+numero) || numero.trim() == '');
 
-alert(`Has introducido el número: ${numero}`);
+confirm(`Has introducido el número: ${numero}`);

@@ -2,5 +2,5 @@ let numero = prompt("Introduce un número para dibujar");
 let resultado = "";
 for (let k = 0; k < numero; k++) {
     resultado = resultado + "*";
-    alert(resultado);
+    console.log(resultado);
 }
