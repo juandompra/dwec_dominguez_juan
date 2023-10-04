@@ -8,7 +8,7 @@ if (nombreCalle == "Calle Los Claveles" || nombreCalle == "Calle El Rosal" || no
 } else if (nombreCalle == "Calle Astorga" || nombreCalle == "Calle La Bañeza" || nombreCalle == "Calle Benavente") {
     linea = "Linea 3";
 } else {
-    linea = "linea Desconocida";
+    confirm("linea Desconocida");
 }
  
 confirm(`Tienes que tomar la ${linea} para ir desde la ${nombreCalle} hasta el trabajo`);
