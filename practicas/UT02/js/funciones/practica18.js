@@ -15,10 +15,18 @@ while (num3 === null || isNaN(+num3) || num3.trim() == '') {
 }
 
 function triangulo (num1, num2, num3) {
-    let resultado = (((num1 + num2) > num3) && ((num1 + num3) > num2)
-    && ((num2 + num3) > num1)) ? true : false;
-    
-    return resultado;
+    return ((num1 + num2) > num3) && ((num1 + num3) > num2)
+    && ((num2 + num3) > num1);
 }
 
 console.log(triangulo(num1, num2, num3));
+/*
+    Correccion victor
+    let isTriangle = (a,b,c) => (a+b>c) && etc;
+
+    que seria lo mismo que:
+
+    let istriangle2 = function (a,b,c) {
+        return (a+b>c) && etc;
+    }
+*/

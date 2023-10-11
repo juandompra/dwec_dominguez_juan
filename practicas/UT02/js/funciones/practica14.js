@@ -15,3 +15,14 @@ function fact (num) {
 }
 
 console.log(fact(num));
+
+/*
+    Correccion de victor
+
+    function fact(num) {
+
+        return (num==1) ? 1 : num * fact(num-1);
+    }
+
+    console.log(`El factorial de 5 es ${fact(5)}`);
+*/

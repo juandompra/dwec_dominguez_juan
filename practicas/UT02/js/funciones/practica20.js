@@ -24,3 +24,10 @@ function getFibonacciAt (n) {
 }
 
 console.log(getFibonacciAt(num));
+
+/*
+    return fibonacci = n =>
+        (n==0) ? 0 :
+        (n==1) ? 1 : 
+        (getFibonacciAt(n-1) + getFibonacci(n-2));
+*/

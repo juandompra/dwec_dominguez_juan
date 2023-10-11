@@ -13,7 +13,7 @@ while (num2 === null || isNaN(+num2) || num2.trim() == '') {
 let operador = prompt ("Dime un operador");
 
 function calc(num1, num2, operador) {
-    let resultado = operador == "+" ? num1 + num2 :
+    let resultado = operador == "+" ? +num1 + +num2 :
         operador == "-" ? num1 - num2 :
         operador == "/" ? num1 / num2 :
         operador == "*" ? num1 * num2 :
@@ -25,3 +25,7 @@ function calc(num1, num2, operador) {
 }
 
 console.log(calc (num1, num2, operador));
+
+/*
+    Victor lo corrige con switch, es lo mismo
+*/
