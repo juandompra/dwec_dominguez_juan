@@ -1,20 +1,19 @@
 function countLetters(str) {
     let resultado = {};
-    let palabra = str.toLowerCase();
-    palabra = palabra.trim();
 
-    for (let char of palabra) {
-        if (char == " ") {
-            continue;
+    for (let char of str.toLowerCase()) {
+        
+        if (char != " ") {
+            resultado[char] = char in resultado ? resultado[char] + 1 : 1;
         }
 
+        /*
         if (!resultado[char]) {
             resultado[char] = 1;
         } else {
             resultado[char] = resultado[char] + 1;
         }
-
-        //resultado[char] = !char in resultado ? 1 : resultado[char] + 1;
+        */
     }
 
     return resultado;

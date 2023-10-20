@@ -1,6 +1,11 @@
 function removeVowels(str) {
     let resultado = "";
 
+    for (let char of str) {
+        resultado += (!'aeiouAEIOU'.includes(char)) ?  char : '';
+    }
+
+    /*
     for (let i = 0; i < str.length; i++) {
         resultado = str.charAt(i) != 'a' &&
         str.charAt(i) != 'A' && str.charAt(i) != 'e' &&
@@ -10,6 +15,7 @@ function removeVowels(str) {
         str.charAt(i) != 'U' ? resultado + str.charAt(i) :
         resultado + '';
     }
+    */
 
     return resultado;
 }
