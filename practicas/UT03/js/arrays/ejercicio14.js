@@ -1,4 +1,4 @@
-let arr = ["Juan", "Usuario2", "Usuario3", "Usuario4"];
+let arr = ["Juan", "Pepe", "Jaime", "Carlos", "María"];
 
 //probar luego
 //arr => arr.forEach (usuario => console.log(`Hola ${usuario}, bienvenido al curso de DWEC. `));
