@@ -6,21 +6,13 @@ let arr4 = [1, 3, 5, 7];
 let isEqualArr = (arr1, arr2) => (arr1.length != arr2.length) ? false : arr1.every((item, index) => item === arr2[index]);
 /*
 function isEqualArr(arr1, arr2) {
-    if (arr1.length != arr2.length) {
-        return false;
-    }
+    let isEqual = arr1.length == arr2.length;
 
-    let contador = 0;
-
-    arr1.forEach(element => {
-        arr2.forEach(element2 => {
-            if (element == element2) {
-                contador++;
-            }
-        });
+    arr1.forEach(item, index => {
+        isEqual &&= arr2[index] == item ? true : false;
     });
 
-    return contador == arr1.length;
+    return isEqual;
 }
 */
 
