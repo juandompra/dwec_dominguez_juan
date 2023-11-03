@@ -34,11 +34,13 @@ function getAverageGrade( str ) {
     let contador = 0;
 
     arr.forEach(element => {
-        total = total + element.notas[str];
-        contador++;
+        if (element.notas[str]) {
+            total += element.notas[str];
+            contador++;
+        }
     });
 
-    return total / contador;
+    return (total / contador).toFixed(2);
 }
 
 console.log(getAverageGrade( 'DIW' ));

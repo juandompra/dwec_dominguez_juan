@@ -36,3 +36,7 @@ function getNumberOfAlumnos( str ) {
 }
 
 console.log(getNumberOfAlumnos('DAW'));
+
+/*
+    return arr.reduce ( (acum, {ciclo}) => acum += ciclo == str ? 1 : 0, 0);
+*/

@@ -40,3 +40,19 @@ function getUsernames() {
 }
 
 console.log(getUsernames());
+
+/*
+    Hecho por victor:
+
+    function getUsernames() {
+        return arr.map (alumno => {
+            let username = `${alumno.nombre}${alumno.ape1[0]}${alumno.ape2[0]}`.toLowerCase();
+        })
+
+        otra forma seria:
+
+        return arr.map ({nombre, ape1, ape2} => {
+            let username = `${nombre}${ape1[0]}${ape2[0]}.toLowerCase();
+        })
+    }
+*/

@@ -51,3 +51,25 @@ function getAverages() {
 }
 
 console.log(getAverages());
+
+/*
+    hecho por victor:
+
+    function getAverages() {
+        return arr.map ( ({nombre, ape1, ape2, expediente, notas}) => {
+            let media = 0;
+            let contador = 0;
+            
+            for (let elemento in notas) {
+                media += notas[elemento];
+                contador++;
+            }
+
+            return {
+                alumno: `${nombre}${ape1}${ape2}`,
+                expediente,
+                nota_media (media/contador).toFixed(2): 
+            }
+        })
+    }
+*/  

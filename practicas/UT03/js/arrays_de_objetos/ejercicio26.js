@@ -55,3 +55,30 @@ function passValida (pass) {
 }
 
 console.log(getUnsecurePass());
+
+/*
+
+    hecho por victor:
+
+
+    function getUnsecurePass() {
+        return arr.filter(({pass}) => isUnsecurePass(pass));
+    }
+
+    function isUnsecurePass (pass) {
+        let a = pass.split('');
+        let mayus = false;
+        let minus = false;
+        let num = false;
+        let lon = a.length;
+
+        a.forEach ( char => {
+            minus ||= 'abcdefgh1jklmnñopqrstuvwxyz'.includes(char);
+            mayus ||= 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.includes(char);
+            num ||= '0123456789'.includes(char);
+
+        })
+
+        return !(lon && mayus && minus && num);
+    }   
+*/

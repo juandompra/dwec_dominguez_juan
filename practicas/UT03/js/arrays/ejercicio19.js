@@ -1,5 +1,8 @@
 function  sortDates( arr ) {
     arr.sort ((a, b) => {
+
+        //a -> '24-05-2020'
+
         if ((a.split('-').reverse().join('')) > (b.split('-').reverse().join(''))) {
             return 1;
         } else {

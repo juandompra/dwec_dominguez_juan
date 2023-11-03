@@ -31,6 +31,7 @@ let arr = [
 
 function getAlumnosByCiclo(str) {
     let alumnos = arr.filter(item => item.ciclo == str);
+    
     let resultado = [];
 
     alumnos.forEach(element => {
@@ -43,3 +44,11 @@ function getAlumnosByCiclo(str) {
 //let getAlumnosByCiclo = str => arr.filter(item => item.ciclo == str);
 
 console.log(getAlumnosByCiclo( 'DAW' ));
+
+/*
+    Hecho por Victor
+
+    return arr.filter( ({ciclo}) => ciclo == str).map ({nombre, ape1, ape2}} => {
+                                                `${nombre} ${ape1} ${ape2}`;
+                                            } )
+*/
