@@ -44,3 +44,24 @@ function getAverageGrade( str ) {
 }
 
 console.log(getAverageGrade( 'DIW' ));
+
+/*
+function getAverageGrade(str) {
+
+    let media = 0;
+ 
+    media = arr.reduce(function(objeto, usuario) {
+        if (usuario.notas[str]) {
+            objeto.suma += usuario.notas[str];
+            objeto.contador++;
+        }
+
+        return objeto;
+
+    }, {suma: 0, contador: 0} );
+    console.log(media);
+
+    // return La media en ${str} es: ${media.toFixed(2)};
+    return La media en ${str} es: ${(media.suma / media.contador).toFixed(2)};
+}
+*/
