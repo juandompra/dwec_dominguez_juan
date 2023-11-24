@@ -5,14 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 14</title>
     <style>
+        .btn {
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #59c98f;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            margin: 5px;
+        }
 
+        .btn:hover {
+            transform: scale(1.04);
+            box-shadow: 3px 3px 3px #cdcdcd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #206A5D;
+            color: white;
+            font-size: 7em;
+            height: 200px;
+            font-weight: 700;
+        }
+
+        #main {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        #products-section {
+            width: 70vw;
+            background-color: #FFCC29;
+        }
+
+        #cart-section {
+            width: 30vw;
+            min-width: 350;
+            background-color: #CA9E13;
+        }
+
+        .product {
+            float: left;
+            margin-right: 200px;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
     </style>
 </head>
 <body>
-    <h1>Práctica 14</h1>
+    <div id="header">Frutería San Andrés</div>
+    <div id="main">
+        <div id="products-section">
+            <!-- Aquí es donde tienes que insertar los productos -->
+        </div>
+        <div id="cart-section">
+            <!-- Espacio reservado para el carrito de la compra -->
+        </div>
+    </div>
 
-
-    <p>Regresar al <a href="../../index.html">menú</a> de la unidad.</p>
+    <div id="paginador">
+        <div id="anterior">Anterior</div>
+        <div id="paginaActual"></div>
+        <div id="siguiente">Siguiente</div>
+    </div>
 </body>
 <script src="../../js/ToDoApp/ejercicio14.js"></script>
 </html>
