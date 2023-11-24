@@ -19,7 +19,7 @@ let arr = [
         ape2: 'Hernández',
         dni: '7340831',
         expediente: '342',
-        pass: 'P@ssw0rd',
+        pass: '123',
         ciclo: 'DAW',
         notas: {
             DWEC: 8,
@@ -85,3 +85,5 @@ let arr = [
 
         return !(lon && mayus && minus && num);
     }   
+
+    console.log(getUnsecurePass());
