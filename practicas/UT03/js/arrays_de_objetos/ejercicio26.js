@@ -29,38 +29,42 @@ let arr = [
     }
 ]
 
-function getUnsecurePass() {
-    let resultado = [];
+/*
+    Hecho por mi (mal)
+*/
 
-    arr.forEach(({nombre, ape1, ape2, pass}) => {
-        if (passValida (pass)) {
-            resultado.push(
-                {
-                alumno : nombre + ' ' + ape1 + ' ' + ape2,
-                pass
-                }
-            );
-        }
-    });
+// function getUnsecurePass() {
+//     let resultado = [];
 
-    return resultado;
-}
+//     arr.forEach(({nombre, ape1, ape2, pass}) => {
+//         if (passValida (pass)) {
+//             resultado.push(
+//                 {
+//                 alumno : nombre + ' ' + ape1 + ' ' + ape2,
+//                 pass
+//                 }
+//             );
+//         }
+//     });
 
-function passValida (pass) {
-    pass.trim();
-    function caracteres () {
-        //utilizar some
-    }
-    return pass.length < 8 && pass.length < 1 && !caracteres();
-}
+//     return resultado;
+// }
 
-console.log(getUnsecurePass());
+// function passValida (pass) {
+//     pass.trim();
+//     function caracteres () {
+//         //utilizar some
+//     }
+//     return pass.length < 8 && pass.length < 1 && !caracteres();
+// }
+
+// console.log(getUnsecurePass());
 
 /*
 
     hecho por victor:
 
-
+*/
     function getUnsecurePass() {
         return arr.filter(({pass}) => isUnsecurePass(pass));
     }
@@ -81,4 +85,3 @@ console.log(getUnsecurePass());
 
         return !(lon && mayus && minus && num);
     }   
-*/
