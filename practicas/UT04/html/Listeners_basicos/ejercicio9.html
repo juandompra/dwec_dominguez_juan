@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 9</title>
+    <style>
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        #board {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid grey;
+            width: 640px;
+        }
+
+        .row {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <h1>Práctica 9</h1>
-    <p>Es el ejercicio del ajedrez</p>
+    <div id="board">
+
+    </div>
     <p>Regresar al <a href="../../index.html">menú</a> de la unidad.</p>
 </body>
 <script src="../../js/Listeners_basicos/ejercicio9.js"></script>
