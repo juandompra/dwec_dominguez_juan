@@ -22,3 +22,4 @@ board.onmousedown = () => false;
     });
     board.append(divRow);
 })
+

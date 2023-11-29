@@ -1,0 +1,8 @@
+li {
+    list-style: none;
+}
+
+.seleccionado {
+    background-color: aquamarine;
+    
+}
