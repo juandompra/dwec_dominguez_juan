@@ -22,6 +22,12 @@ function updateTime () {
         clearInterval(interval);
         score.textContent = contador;
         crono.textContent = '20:000';
+        let nombre = document.getElementById('player-input').value;
+        jugadores.push({
+            'name' : nombre,
+            'playerScore' : contador
+        });
+        document.getElementById('player-input').value = "";
         mostrarScores();
     }
 }
@@ -61,31 +67,24 @@ start.addEventListener("click", () => {
 
     juego.classList.add('dentro');
     zonaDeJuego.append(juego);
-
-    let nombre = document.getElementById('player-input').value;
-    jugadores.push({
-        'name' : nombre,
-        'score' : score
-    });
-    document.getElementById('player-input').value = "";
 })
 
-jugadores.sort( (a, b) => 
-    (a.score > b.score) ? -1 : 1
-)
-
 function mostrarScores () {
+    jugadores.sort( (a, b) => 
+        (a.playerScore > b.playerScore) ? -1 : 1
+    )
+
     let first = document.getElementById('ranking-first');
     first.children[0].textContent = jugadores[0].name;
-    first.children[1].textContent = jugadores[0].score;
+    first.children[1].textContent = jugadores[0].playerScore;
 
     let second = document.getElementById('ranking-second');
     second.children[0].textContent = jugadores[1].name;
-    second.children[1].textContent = jugadores[1].score;
+    second.children[1].textContent = jugadores[1].playerScore;
 
     let third = document.getElementById('ranking-third');
     third.children[0].textContent = jugadores[2].name;
-    third.children[1].textContent = jugadores[2].score;
+    third.children[1].textContent = jugadores[2].playerScore;
 }
 
 reset.addEventListener("click", () => {
