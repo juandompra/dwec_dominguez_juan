@@ -33,32 +33,38 @@ let solucion = palabraAleatoria;
 let numeroFails = 0;
 let juegoFinalizado = 0;
 
+function validarLetra (letra) {
+    return letrasTeclado.includes(letra);
+}
+
 function mostrarLetra(e){
     let texto = document.getElementById('msg');
     let letrav2;
 
+    console.log(e.key);
+
     if (e.type == "keydown") {
-       if (letrasTeclado.includes(e.key.toLowerCase())) {
+       if (validarLetra(e.key.toLowerCase())) {
             letrav2 = e.key.toLowerCase();
        }
-    } else {
+    }
+
+    if (e.type == "click") {
         letrav2 = e.target.textContent;
     }
 
-    console.log(solucion);
+    //console.log(solucion);
+
 
     if (juegoFinalizado == 0) {
         if (letrasPalabra.includes(letrav2)) {
-
             if (e.type == "keydown") {
-                if (letrasTeclado.includes(e.key.toLowerCase())) {
-                    let marcadores = document.querySelectorAll('.key');
-                    marcadores.forEach(element => {
-                        if (element.textContent == e.key.toLowerCase()) {
-                            element.classList.add('succeed');
-                        }
-                    });
-                }
+                let marcadores = document.querySelectorAll('.key');
+                marcadores.forEach(element => {
+                    if (element.textContent == e.key.toLowerCase()) {
+                        element.classList.add('succeed');
+                    }
+                });
             } else if (e.type == "click") {
                 e.target.classList.add('succeed');
             }
@@ -75,14 +81,12 @@ function mostrarLetra(e){
             }
         } else {
             if (e.type == "keydown") {
-                if (letrasTeclado.includes(e.key.toLowerCase())) {
-                    let marcadores = document.querySelectorAll('.key');
-                    marcadores.forEach(element => {
-                        if (element.textContent == e.key) {
-                            element.classList.add('fail');
-                        }
-                    });
-                }
+                let marcadores = document.querySelectorAll('.key');
+                marcadores.forEach(element => {
+                    if (element.textContent == e.key) {
+                        element.classList.add('fail');
+                    }
+                });
             } else if (e.type == "click") {
                 e.target.classList.add('fail');
             }

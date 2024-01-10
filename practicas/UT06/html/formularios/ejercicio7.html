@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <style>
+        fieldset {
+            position: relative;
+        }
+        .invalid { 
+            border-color: red; 
+        }
+
+        #error { 
+            color: red 
+        }
+
+        span {
+            background-color: gainsboro;
+            border: 1px solid black;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctica 7</h1>
+    <h1>PR0607</h1>
+    <div id="caja">
+        <form action="" method="post" name="login">
+            <fieldset>
+                <legend><strong>Inicio de sesión</strong></legend>
+                <label for="correo">Correo electrónico: </label>
+                <input type="text" name="correo" id="correo">
+                <br>
+                <label for="pass">Contraseña: </label>
+                <input type="text" name="pass" id="pass">
+                <br>
+                <label for="repetirPass">Repetir contraseña: </label>
+                <input type="text" name="repetirPass" id="repetirPass">
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <p>Regresar al <a href="../../index.html">menú</a> de la unidad.</p>
+</body>
+<script src="../../js/formularios/ejercicio7.js"></script>
+</html>
