@@ -1,7 +1,5 @@
 let paginaActual = 1;
 let numeroPaginas = 6;
-let elementsPorPagina = 10;
-let json;
 let tabla = document.getElementById('list');
 let cargando = document.getElementById('info');
 let loading = document.getElementById('loading');
