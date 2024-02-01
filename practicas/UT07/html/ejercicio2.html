@@ -6,11 +6,15 @@
     <title>Ejercicio 2</title>
     <style>
         img {
-            width: 150px;
-            height: 150px;
+            width: 350px;
+            height: 350px;
         }
         .hidden {
             display: none;
+        }
+        #botones {
+            display: flex;
+            gap: 255px;
         }
     </style>
 </head>
@@ -27,9 +31,12 @@
     </table>
     <div id="loading" class="hidden"><img src="../img/loading.gif" alt="gif de cargando"></div>
     <div id="info"></div>
-    <div id="anterior">Anterior</div>
-    <div id="paginaActual"></div>
-    <div id="siguiente">Siguiente</div>
+    <br>
+    <div id="botones">
+        <div id="anterior">Anterior</div>
+        <div id="paginaActual"></div>
+        <div id="siguiente"> Siguiente</div>
+    </div>
     <p>Regresar al <a href="../../index.html">menú</a> de la unidad.</p>
     <script src="../js/ejercicio2.js"></script>
 </body>
